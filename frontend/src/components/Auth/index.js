@@ -243,7 +243,7 @@ const Auth = () => {
 export default Auth;
 */
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../../IMG/dev-logo.png";
 import Google from "../../IMG/Google_search.png";
 import GitHub from "../../IMG/github.png";
@@ -328,6 +328,7 @@ const Auth = () => {
             </span>
             <p>A community built for developers, by developers.</p>
           </h1>
+
           <h2>Continue with</h2>
           <div className="auth-btn google" onClick={handleGoogleAuth}>
             <img src={Google} alt="Google" />
