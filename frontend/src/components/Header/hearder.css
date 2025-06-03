@@ -1,0 +1,132 @@
+.main-header{
+  margin-bottom: 0px;
+    height: 40px;
+    background-color: rgb(247, 123, 123);
+    display: flex;
+    justify-content: space-between;
+    padding:12px 20px ;
+    box-shadow:34px 34px 34px 34px rgba(201, 199, 199, 0.674);
+}
+.main-header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.main-header .logo .logo-text{
+    font-size: 24px;
+    margin-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main-header .logo .logo-text span{
+    color: #e4721b;
+}
+.main-header .logo .logo-text{
+  color:  rgb(155, 135, 188);
+}
+.main-header .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    border: rgba(139, 137, 137, 0.84) solid 0.9px;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-left: -80px;
+    margin-bottom: 0px;
+}
+.main-header .search .search-icon{
+    position: relative;
+    top: 3px;
+}
+.main-header .end{
+  cursor: pointer;
+}
+.main-header .end .logout-bnt{
+  transition: 0.7s;
+}
+.main-header .end .logout-bnt:hover{
+
+  color: rgb(247, 91, 91);
+}
+.main-header .search input{
+    border: none;
+      outline: none;
+      background-color:rgb(105, 70, 161);
+    width: 90%;
+    color: #dacaed;
+    height: 20px;
+}
+.main-header .logo .logo-img{
+    width: 40px;
+    height: 40px;
+}
+.main-header .end .avtar{
+    width: 41px;
+    height: 41px;
+    margin-left: -160px;
+}
+.main-header .end{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Make sure it stays above other elements */
+  background-color: rgb(105, 70, 161); /* Or match your site's background */
+  display: flex;
+  color: #f5f5f5;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  overflow: auto;
+  box-shadow: 0 12px 14px rgba(0, 0, 0, 0.1); /* Optional shadow */
+
+}
+
+/* Optional: Add padding to body to prevent content being hidden under the header */
+body {
+  padding-top: 70px; /* Match header height */
+}
+.Home-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.outer-main {
+  display: flex;
+}
+
+.sidebar-main {
+  width: 180px;
+  height: 100vh;
+  position: fixed;
+
+  left: 0;
+  background: #f5f5f5; /* Add background to differentiate it */
+  z-index: 10; /* Ensure it stays on top */
+}
+
+.Quation-main {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 180px; /* This is critical */
+}
+
+.end{
+    margin-right: 30px;
+}
+
+@media (max-width: 576px) {
+  .avtar {
+    display: none;
+  }
+  .search{
+    max-width: 30%;
+  }
+}

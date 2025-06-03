@@ -1,0 +1,48 @@
+.editor-container {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #f9fafb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  max-width: 100%;
+}
+
+.editor-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.editor-toolbar button {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.editor-toolbar button:hover {
+  background-color: #f3f4f6;
+}
+
+.editor-toolbar button.is-active {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+
+.editor-box {
+  min-height: 200px;
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+  height: 100%;
+  border: 1px solid #d1d5db;
+}

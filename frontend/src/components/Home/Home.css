@@ -1,0 +1,247 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.outer-main {
+  display: flex;
+  overflow: scroll;
+  scrollbar-width: none;
+  justify-content: center;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Quation-main {
+  width: 100%;
+  margin: 0;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+.Quation-main .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Quation-main .top h1 {
+  font-size: 1.8rem;
+  color: rgb(105, 70, 161);
+  margin: 0;
+  transition: color 0.3s ease-in-out;
+  cursor: default;
+}
+
+.Quation-main .top h1:hover {
+  color: rgba(105, 70, 161, 0.8);
+}
+
+.Quation-main .filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.ask-question-button {
+  background-color: rgb(105, 70, 161);
+  color: white;
+  padding: 10px 18px;
+  font-size: 19px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.25s ease-in-out, transform 0.2s ease;
+}
+
+.ask-question-button:hover {
+  background-color: rgba(105, 70, 161, 0.9);
+}
+
+.ask-question-button:active {
+  transform: scale(0.98);
+}
+
+.filters select,
+.filters input[type="checkbox"] {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.no_Quations {
+  font-size: 1rem;
+  color: rgba(105, 70, 161, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.filter-controls {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-controls select {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #f1f5f9;
+  font-size: 0.95rem;
+}
+
+.filter-controls select:hover {
+  background-color: #e2e8f0;
+  border-color: rgba(105, 70, 161, 0.6);
+  cursor: pointer;
+}
+
+.filter-controls label select:focus {
+  outline: none;
+  border-color: rgb(105, 70, 161);
+  box-shadow: 0 0 0 2px rgba(105, 70, 161, 0.3);
+}
+
+.filter-controls input[type="checkbox"]:hover {
+  cursor: pointer;
+  outline: 1px dashed rgb(105, 70, 161);
+}
+
+.quations {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.question-card {
+  padding: 1rem 1.2rem;
+  background-color: rgba(105, 70, 161, 0.04);
+  border: 1px solid rgba(105, 70, 161, 0.2);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.question-card:hover {
+  background-color: rgba(105, 70, 161, 0.08);
+  border-color: rgba(105, 70, 161, 0.4);
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.sidebar-main {
+  width: 180px;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(105, 70, 161, 0.03);
+  z-index: 10;
+}
+
+.mini-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Home-main {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fb;
+  min-height: 100vh;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .outer-main {
+    flex-direction: column;
+    overflow-x: hidden;
+    padding: 0.5rem;
+  }
+
+  .sidebar-main {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .Quation-main {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: none;
+  }
+
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .top h1 {
+    font-size: 1.4rem;
+  }
+
+  .ask-question-button {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 12px 0;
+    border-radius: 6px;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin: 1rem 0 0 0;
+  }
+
+  .filter-controls {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .filter-controls select,
+  .filters select,
+  .filters input[type="checkbox"] {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .quations {
+    gap: 1rem;
+  }
+
+  .question-card {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .no_Quations {
+    font-size: 0.9rem;
+  }
+}

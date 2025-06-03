@@ -1,0 +1,40 @@
+.downDiv {
+  display: flex;
+  margin-top: 30px;
+}
+
+.tagsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px;
+}
+.upperTags h1{
+  color:  rgb(105, 70, 161);;
+}
+.tagBox {
+  background-color: rgba(105, 70, 161, 0.05);
+  border: 1px solid rgba(105, 70, 161, 0.2);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: rgb(105, 70, 161);
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.tagBox:hover {
+  transform: translateY(-2px);
+  background-color: rgba(105, 70, 161, 0.1);
+  border-color: rgba(105, 70, 161, 0.4);
+}
+
+.upperTags .para {
+  color: rgba(105, 70, 161, 0.4);
+}
+
+.upperTags {
+  padding: 30px;
+}

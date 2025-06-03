@@ -1,0 +1,59 @@
+.Single-quation {
+  display: flex;
+  padding: 20px 0px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.Single-quation .view {
+  width: 20%;
+  text-align: end;
+  padding-right: 20px;
+  color: rgb(105, 70, 161);
+}
+
+.Single-quation .Singlequation-detail {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.Single-quation .Singlequation-detail .title {
+  color: rgb(105, 70, 161);
+  font-weight: bold;
+}
+
+.Singlequation-detail .tag {
+  padding: 4px;
+  width: fit-content;
+  border-radius: 4px;
+  background-color: rgba(105, 70, 161, 0.1);
+  color: rgb(105, 70, 161);
+  font-weight: 500;
+}
+
+.Singlequation-detail .tags {
+  display: flex;
+  margin-top: 10px;
+  gap: 15px;
+}
+
+.Singlequation-detail .userDetails {
+  display: flex;
+}
+
+.Single-quation .Singlequation-detail .Singlequation-end {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Singlequation-detail .userDetails .username {
+  margin-left: 12px;
+  color: rgba(105, 70, 161, 0.8);
+}
+
+.ProseMirror {
+  outline: none;
+}

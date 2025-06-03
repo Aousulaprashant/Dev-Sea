@@ -1,0 +1,103 @@
+.outerQuation-div {
+  display: flex;
+}
+
+.tags-input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 5px;
+  border: 1px solid rgba(105, 70, 161, 0.3);
+  border-radius: 5px;
+}
+.AskQuation-start .title-div .title{
+  color:  rgb(105, 70, 161);;
+}
+.AskQuation-start {
+  width: 100%;
+  padding: 30px;
+}
+
+.tag {
+  background-color: rgba(105, 70, 161, 0.1);
+  color: rgb(105, 70, 161);
+  padding: 5px 10px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.remove-tag {
+  background: none;
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
+  color: rgb(105, 70, 161);
+}
+
+.tag-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+  color: rgb(105, 70, 161);
+}
+
+.title-input,
+.tag-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(105, 70, 161, 0.3);
+  border-radius: 6px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.title-input:focus,
+.tag-input:focus {
+  border-color: rgb(105, 70, 161);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(105, 70, 161, 0.2);
+}
+
+.quation-div,
+.title-div,
+.AskQuationTags {
+  margin-bottom: 20px;
+}
+
+.quation {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(105, 70, 161);
+}
+
+.quationDec {
+  font-size: 14px;
+  color: rgba(105, 70, 161, 0.6);
+  margin-bottom: 5px;
+}
+
+.AskQuation-start .ask-question-button {
+  background-color: rgb(105, 70, 161);
+  color: white;
+  padding: 10px 16px;
+  font-size: 14px;
+  margin: 20px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.AskQuation-start .ask-question-button:hover {
+  background-color: rgba(105, 70, 161, 0.85);
+}
+
+.AskQuation-main {
+  margin-top: 30px;
+}
