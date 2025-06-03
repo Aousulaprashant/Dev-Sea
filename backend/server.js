@@ -10,6 +10,8 @@ const tagRoutes = require("./routes/tags.routes");
 
 const app = express();
 
+const cors = require("cors");
+
 const allowedOrigins = [
   "http://localhost:3000",
   "https://dev-sea-nru4.vercel.app",
@@ -27,6 +29,7 @@ app.use(
     credentials: true, // if you're using cookies or auth headers
   })
 );
+
 const PORT = process.env.PORT || 5000;
 
 ConnectDB();
