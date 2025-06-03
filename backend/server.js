@@ -17,6 +17,7 @@ const allowedOrigins = [
   "https://dev-sea-nru4.vercel.app",
 ];
 
+// ✅ Apply CORS only once
 app.use(
   cors({
     origin: function (origin, callback) {
@@ -26,7 +27,7 @@ app.use(
         callback(new Error("Not allowed by CORS"));
       }
     },
-    credentials: true, // if you're using cookies or auth headers
+    credentials: true,
   })
 );
 
@@ -34,12 +35,6 @@ const PORT = process.env.PORT || 5000;
 
 ConnectDB();
 app.use(express.json());
-app.use(
-  cors({
-    origin: "http://localhost:3000", // Your React frontend origin
-    credentials: true,
-  })
-); // Frontend URL here
 
 app.get("/", (req, res) => {
   res.send("Hello, World!");
