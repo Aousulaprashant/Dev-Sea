@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import { Auth } from "./fireBaseConfig";
 import { signInWithPopup } from "firebase/auth";
+import axiosInstance from "./AxiosInstance";
 
 const FirebaseAuth = async (Provider) => {
   try {
@@ -9,8 +10,8 @@ const FirebaseAuth = async (Provider) => {
     const idToken = await result.user.getIdToken();
 
     // const res
-    const res = await axios.post(
-      "http://localhost:5000/api/Auth/Firebase",
+    const res = await axiosInstance.post(
+      "/Auth/Firebase",
       {
         idToken,
       },

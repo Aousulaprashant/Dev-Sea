@@ -11,12 +11,12 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAp-rUQzFhfJCbDRaKGSPSgf2I6efQPT6s",
-  authDomain: "dev-overflow-adv.firebaseapp.com",
-  projectId: "dev-overflow-adv",
-  storageBucket: "dev-overflow-adv.firebasestorage.app",
-  messagingSenderId: "680189895534",
-  appId: "1:680189895534:web:3064b692779df02829d77f",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
