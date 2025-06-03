@@ -303,8 +303,9 @@ const Auth = () => {
 
   const handleRegister = async () => {
     try {
+      console.log(userinfo);
       const res = await axiosInstance.post("/Auth/register", {
-        username: userinfo.username,
+        name: userinfo.username,
         email: userinfo.email,
         password: userinfo.password,
       });

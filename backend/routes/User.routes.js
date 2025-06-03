@@ -31,7 +31,7 @@ routes.post("/register", async (req, res) => {
       .json({ message: "User registered successfully.", user: newUser });
   } catch (err) {
     console.error(err);
-    return res.status(500).json({ message: "Error registering user." });
+    return res.status(500).json({ message: err });
   }
 });
 
