@@ -9,6 +9,7 @@ const FirebaseAuth = async (Provider) => {
     const result = await signInWithPopup(Auth, Provider);
     const idToken = await result.user.getIdToken();
 
+    console.log(idToken);
     // const res
     const res = await axiosInstance.post(
       "/Auth/Firebase",

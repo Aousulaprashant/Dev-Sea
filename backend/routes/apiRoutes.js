@@ -10,6 +10,7 @@ routes.post("/FireBase", async (req, res) => {
   try {
     const decodedToken = await admin.auth().verifyIdToken(idToken);
     const { email, name, uid } = decodedToken;
+    console.log("Decoded Firebase Token:", decodedToken);
 
     let user = await User.findOne({ email });
     if (!user) {
