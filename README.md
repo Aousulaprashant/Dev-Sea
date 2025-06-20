@@ -56,7 +56,7 @@
 ---
 
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 🤖 AI-powered answer summarization using OpenAI
 
 🔍 Full-text search with filters and sorting
