@@ -72,11 +72,6 @@ Prashanth Aousula
 ⭐️ Support
 If you found this project helpful, consider giving it a ⭐ on GitHub and sharing it with your peers!
 
-yaml
----
-
-✅ Let me know if you want this saved as a downloadable `.md` file or auto-uploaded to your repository. I can also create a matching `README.png` banner or include screenshots section placeholders.
-
 
 
 
