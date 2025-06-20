@@ -38,11 +38,6 @@
   - ✅ Mentions, images, quotes
   - ✅ Markdown-like formatting
 
-- 📊 **Dynamic Role Dashboards**
-  - **Admin**: Manage users/questions/answers
-  - **Learner**: View activity, submit and manage content
-
-- ⚡ **Fast Dynamic Routing** via **Next.js App Router**
 
 ---
 
