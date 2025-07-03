@@ -17,8 +17,7 @@
 
 ## 🚀 Overview
 
-**DevSEA** is a modern Q&A platform built with the **MERN stack**, enhanced with **Next.js 14 (App Router)** and a rich content editor. Users can log in, ask or answer questions, and explore content with a smooth, responsive UI. Admins and learners access role-based dashboards to manage their activity.
-
+**DevSEA** is a modern Q&A platform built with the **MERN stack**, enhanced with a rich content editor. Users can log in, ask or answer questions, and explore content with a smooth, responsive UI. 
 > ⚠️ **AI-powered answer summarization** is a planned feature and currently under development.
 
 ---
